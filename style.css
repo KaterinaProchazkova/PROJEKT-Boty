@@ -21,3 +21,152 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #f5f5f5;
+}
+
+.card {
+    display: flex;
+    margin: 150px auto;
+    width: 670px;
+    height: 440px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+   
+}
+
+.left {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 335px;
+    
+    background-image: linear-gradient( to right bottom, #06d7c1, #50cc49 );
+    border-radius: 10px 0 0 10px;
+    padding: 30px;
+    position: relative;
+}
+    .slogan {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .nike {
+        position: absolute;
+        left: -80px;
+        bottom: 10px;
+    }
+
+    .price-text{
+        text-align: right;
+        color: #fff;
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+    }
+    
+        .price {
+            font-size: 28px;
+            font-weight: 500;
+        }
+        
+        .guarantee {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+
+.right {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 335px;
+
+    padding: 30px;
+    position: relative;
+}
+     
+    .name {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .product {
+        color: grey;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .description {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #06d7c1;
+    }
+
+    .size {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .size-number {
+        display: flex;
+        margin: 0;
+        padding: 10px 0;
+       
+    }
+
+    .size-number li {
+        display: inline-block;
+        padding: 6px;
+        margin: 6px;
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        border: 1px solid transparent;
+        transition: text-shadow .3s;
+        }
+
+        /* .size-38 {
+            color: #f15f42;
+            border: 1px solid #f15f42;
+            font-weight: 500;
+        } */
+
+        .size-number li:hover {
+            color: #f15f42;
+            border: 1px solid #f15f42;
+            border-radius: 50%;
+
+            text-shadow: 0 0 .50px, 0 0 .50px;
+        }
+
+    .btn {
+        font-size: 15px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        background-color:  #f15f42;
+        padding: 12px 30px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px rgb(219, 219, 219);
+
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+    }
